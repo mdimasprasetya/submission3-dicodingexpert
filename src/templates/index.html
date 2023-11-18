@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LAVECI</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#232946" />
+
+    <link rel="icon" href="./logo/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./logo/icon.png" />
+    <link rel="shortcut icon" href="./logo/icon.png" />
+    <link rel="shortcut icon" href="./logo/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <a href="#headline" class="skip-link">Konten</a>
+
+    <header>
+      <div id="herosWrapMob">
+        <picture>
+          <source media="(max-width: 600px)" srcset="./heros/hero-small.jpg" type="image/jpeg" style="width: 100%; height: 700px;object-fit: cover;object-position: center;">
+          <source media="(max-width: 1000px)" srcset="./heros/hero-large.jpg" type="image/jpeg" style="width: 100%; height: 700px;object-fit: cover;object-position: center;">
+          <img src="./heros/hero.jpg" alt="Hero Image" style="width: 100%; height: 650px;object-fit: cover;object-position: center;">
+      </picture>
+      </div>
+      <button
+        id="menu"
+        class="off-canvas"
+        href="#"
+        aria-label="Side Navigation"
+      >
+        ☰
+      </button>
+      <nav id="drawer" class="nav">
+        <div id="wrapperid" class="wrapper">
+          <p class="p-header"><a href="#/home">LAVECI</a></p>
+          <div class="nav-link"><a href="#/home">HOME</a></div>
+          <div class="nav-link"><a href="#/favorite">FAVORITE</a></div>
+          <div class="nav-link">
+            <a href="https://www.instagram.com/dimaasprstya/">ABOUT US</a>
+          </div>
+        </div>
+        <div id="herosWrap">
+          <picture>
+            <source media="(max-width: 600px)" srcset="./heros/hero-small.jpg" type="image/jpeg" style="width: 100%; height: 700px;object-fit: cover;object-position: center;">
+            <source media="(max-width: 1000px)" srcset="./heros/hero-large.jpg" type="image/jpeg" style="width: 100%; height: 700px;object-fit: cover;object-position: center;">
+            <img src="./heros/hero.jpg" alt="Hero Image" style="width: 100%; height: 700px;object-fit: cover;object-position: center;">
+        </picture>
+        </div>
+      </nav>
+      <div class="hero-text-box">
+        <h1>LAVECI</h1>
+        <p>Wujud Murni dari Keindahan Sebuah Rasa</p>
+
+        <a class="btn btn-ghost" href="#/favorite">Restoran Favorit</a>
+      </div>
+    </header>
+
+    <main id="mainContent" tabindex="0"></main>
+    <div class="trinity-rings-spinner" id="loadingBar">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <p>Loading ....</p>
+    </div>
+
+    <footer-element></footer-element>
+  </body>
+</html>
